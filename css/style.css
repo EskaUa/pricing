@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/fonts/MavenProRegular/MavenPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/fonts/MavenProBold/MavenPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Maven Pro Medium";
+  src: url("/fonts/MavenProMedium/MavenPro-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Maver Pro, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: linear-gradient(150deg, rgba(136, 211, 206, 0.7) 0%, rgba(110, 69, 226, 0.7) 100%), url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.main .header {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .header .menu {
+  width: 70%;
+}
+.main .header .menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.main .header .menu ul .menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+.main .header .menu ul .get-started-btn {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  margin-left: 60px;
+}
+.main .main-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main-text span {
+  display: inline-block;
+}
+.main .main-text span:after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.main .main-text span:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.main .main-text h1 {
+  font-size: 80px;
+  margin: 0.5rem;
+}
+.main .main-arrow {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main .main-arrow .arrow-down {
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+  background-color: #fff;
+}
+
+.table-block {
+  background-color: #f9fafc;
+  height: 100vh;
+  min-height: 600px;
+  padding: 10rem;
+}
+.table-block .table {
+  text-align: center;
+}
+.table-block .table-subtitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #9fa4af;
+}
+.table-block .table-subtitle:after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.table-block .table-subtitle:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #6e45e2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.table-block .table-title {
+  color: #4f4f6f;
+  font-size: 6rem;
+  margin: 0;
+}
+.table-block .table-text {
+  color: #9fa4af;
+  font-size: 1.8rem;
+  display: inline-block;
+  width: 40rem;
+  line-height: 1.4;
+}
+.table-block .price {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table-block .price .price-tag {
+  background-color: #fff;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+.table-block .price .price-tag:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 60px 10px rgba(204, 204, 223, 0.71);
+}
+.table-block .price .price-tag span {
+  font-size: 1.4rem;
+  text-decoration: uppercase;
+  margin: 3rem auto 1rem;
+}
+.table-block .price .price-tag h4 {
+  color: #4f4f6f;
+  font-size: 3.5rem;
+  margin: 0;
+}
+.table-block .price .price-tag h4 sub {
+  font-size: 2rem;
+}
+.table-block .price .price-tag h4 sup {
+  font-size: 2rem;
+}
+.table-block .price .price-tag p {
+  color: #9fa4af;
+}
+.table-block .price .price-tag .price-btn {
+  background-color: #fff;
+  border: 1px solid #9fa4af;
+  color: #9fa4af;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 4rem;
+  border-radius: 100px;
+  transition: 0.2s all;
+}
+.table-block .price .price-tag .price-btn:hover {
+  background-color: #6e45e2;
+  color: #fff;
+  cursor: pointer;
+}
